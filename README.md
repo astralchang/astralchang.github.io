@@ -5,7 +5,7 @@
 
 | 项目名称     | 新手友好型个人博客（Simple Personal Blog for Beginners） |
 | ------------ | -------------------------------------------------------- |
-| 开发周期     | 2025年8月30日 - 2025年9月12日                            |
+| 开发周期     | 2025年9月7日 - 2025年9月11日                             |
 | 线上部署地址 | https://astralchang.github.io/                           |
 | 核心技术栈   | HTML5+CSS3+JavaScript+Bootstrap 5+Git+GitHub Pages       |
 
@@ -38,7 +38,7 @@
 
 ## 三、文件目录结构（严格遵循任务书开发规范）
 ```
-simple-personal-blog/  # 项目根目录
+dazuoye_blog/  # 项目根目录
 ├─ index.html          # 首页（入口页面）
 ├─ article-list.html   # 文章列表页
 ├─ article-detail.html # 文章详情页（1篇示例文章）
