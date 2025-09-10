@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章详情 - 我的小博客</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 基础样式 -->
+    <link href="css/base.css" rel="stylesheet">
+    <!-- 公共样式 -->
+    <link href="css/common.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+            <!-- 博客标题 -->
+            <a class="navbar-brand" href="index.html">我的小博客</a>
+            <!-- 移动端汉堡按钮 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 导航菜单（折叠部分） -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="article-list.html">文章列表</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">关于我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">首页</a></li>
+                        <li class="breadcrumb-item"><a href="article-list.html">文章列表</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">文章详情</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <article>
+                    <header class="mb-4">
+                        <h1 class="fw-bold">第一次用Bootstrap做响应式页面，太香了！</h1>
+                        <div class="text-muted fst-italic mb-2">Posted on August 30, 2025</div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="badge bg-primary">Web开发</span>
+                                <span class="badge bg-secondary">Bootstrap</span>
+                            </div>
+                            <div>
+                                <span class="text-muted"><i class="bi bi-eye"></i> 阅读量: 128</span>
+                            </div>
+                        </div>
+                        <img src="assets/images/articles/article1.jpg" alt="文章配图" class="img-fluid rounded">
+                    </header>
+                    
+                    <section class="mb-5">
+                        <p class="fs-5">以前手写@media查询适配不同屏幕，现在用Bootstrap的col类，1行代码搞定布局，大大提高了开发效率。Bootstrap 5相比之前的版本，移除了jQuery依赖，使用原生JavaScript，文件更小，性能更好。</p>
+                        
+                        <p>在这篇文章中，我将分享如何使用Bootstrap 5创建一个响应式布局，以及在实际项目中的一些心得体会。</p>
+                        
+                        <h2 class="fw-bold mb-3 mt-5">为什么选择Bootstrap 5？</h2>
+                        <p>Bootstrap 5带来了许多改进和新特性：</p>
+                        <ul>
+                            <li>移除了jQuery依赖，使用原生JavaScript</li>
+                            <li>改进了网格系统，支持更多断点</li>
+                            <li>提供了更多实用的工具类</li>
+                            <li>优化了表单组件样式</li>
+                            <li>更好的自定义选项</li>
+                        </ul>
+                        
+                        <h2 class="fw-bold mb-3 mt-5">创建响应式布局</h2>
+                        <p>使用Bootstrap的网格系统，我们可以轻松创建适应不同屏幕尺寸的布局：</p>
+                        <pre><code>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-md-8"&gt;主要内容&lt;/div&gt;
+    &lt;div class="col-md-4"&gt;侧边栏&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        
+                        <p>以上代码创建了一个在中等屏幕及以上设备上显示为8:4列的布局，在小屏幕上则自动变为垂直堆叠。</p>
+                        
+                        <h2 class="fw-bold mb-3 mt-5">心得体会</h2>
+                        <p>使用Bootstrap 5的过程中，我发现它极大地提升了我的开发效率。特别是在处理响应式设计时，不再需要编写大量的CSS媒体查询，而是通过简单的类名就能实现复杂的布局效果。</p>
+                        
+                        <p>当然，Bootstrap并不是万能的，有时候我们仍然需要编写自定义CSS来满足特定的设计需求。但总体来说，它是一个非常优秀的前端框架，特别适合快速原型开发和中小型项目。</p>
+                    </section>
+                </article>
+                
+                <section class="mb-5">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">作者简介</h5>
+                            <p class="card-text">我是一个热爱前端开发的程序员，专注于HTML、CSS、JavaScript和现代前端框架的学习与实践。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-light text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 我的小博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 公共JS -->
+    <script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* 重置浏览器默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "微软雅黑", "Microsoft YaHei", sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 全局CSS变量 */
+:root {
+    --primary-color: #165DFF;
+    --secondary-color: #6C757D;
+    --light-color: #F8F9FA;
+    --dark-color: #343A40;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+}

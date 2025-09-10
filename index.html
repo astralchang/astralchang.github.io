@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的小博客</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 基础样式 -->
+    <link href="css/base.css" rel="stylesheet">
+    <!-- 公共样式 -->
+    <link href="css/common.css" rel="stylesheet">
+    <!-- 首页样式 -->
+    <link href="css/page/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+            <!-- 博客标题 -->
+            <a class="navbar-brand" href="index.html">我的小博客</a>
+            <!-- 移动端汉堡按钮 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 导航菜单（折叠部分） -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="article-list.html">文章列表</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">关于我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="container mt-4">
+        <!-- 轮播图 -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/banner/banner1.png" class="d-block w-100" alt="技术分享">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>技术分享</h5>
+                        <p>分享最新的技术趋势和开发经验</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/banner/banner2.png" class="d-block w-100" alt="生活记录">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>生活记录</h5>
+                        <p>记录生活中的点点滴滴和感悟</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/banner/banner3.png" class="d-block w-100" alt="学习笔记">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>学习笔记</h5>
+                        <p>整理学习过程中的重点知识和心得</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- 文章列表标题 -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4">最新文章</h2>
+            </div>
+        </div>
+
+        <!-- 文章列表 -->
+        <div class="row" id="articleContainer">
+            <!-- 文章卡片将通过JavaScript动态生成 -->
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-light text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 我的小博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 公共JS -->
+    <script src="js/common.js"></script>
+    <!-- 首页JS -->
+    <script src="js/page/index.js"></script>
+</body>
+
+</html>
